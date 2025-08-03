@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact – Nexyna AI</title>
+  <meta name="description" content="Parlez-nous de votre projet IA. Réponse sous 24h." />
+  <link rel="canonical" href="https://nexyna.ai/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact – Nexyna AI" />
+  <meta property="og:description" content="Parlez-nous de votre projet IA. Réponse sous 24h." />
+  <meta property="og:url" content="https://nexyna.ai/contact.html" />
+  <meta property="og:image" content="https://nexyna.ai/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact – Nexyna AI" />
+  <meta name="twitter:description" content="Parlez-nous de votre projet IA. Réponse sous 24h." />
+  <meta name="twitter:image" content="https://nexyna.ai/og-image.jpg" />
+  <style>
+    :root{--bg:#0b1020;--card:#121a2e;--text:#eaf2ff;--muted:#9fb3d9;--neon:#00e5ff;--cta:#7c5cff}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Inter,sans-serif}
+    header,main,footer{max-width:900px;margin:auto;padding:24px}
+    a{color:var(--neon);text-decoration:none} nav a{margin-right:18px}
+    .h1{font-size:clamp(28px,4vw,44px);text-shadow:0 0 18px rgba(0,229,255,.35)}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:18px}
+    label{display:block;margin:10px 0 4px;color:var(--muted)}
+    input,textarea{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:#0e1530;color:var(--text)}
+    .btn{display:inline-block;background:var(--cta);color:white;padding:10px 16px;border-radius:10px;margin-top:12px}
+    .topbar{display:flex;align-items:center;justify-content:space-between}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div><a href="/">Nexyna AI</a></div>
+  <nav>
+    <a href="/services.html">Services</a>
+    <a href="/projects.html">Projets</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <h1 class="h1">Contact</h1>
+  <div class="card">
+    <p class="muted">Email : <a href="mailto:contact@nexyna.ai">contact@nexyna.ai</a><br> WhatsApp : <a href="https://wa.me/33764212227" rel="nofollow">+33 7 64 21 22 27</a></p>
+
+    <!-- Formulaire simple sans backend (mailto) -->
+    <form action="mailto:contact@nexyna.ai" method="post" enctype="text/plain">
+      <label>Nom</label>
+      <input name="nom" required />
+      <label>Email</label>
+      <input type="email" name="email" required />
+      <label>Message</label>
+      <textarea name="message" rows="6" required></textarea>
+      <button class="btn" type="submit">Envoyer</button>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <small class="muted">© 2025 Nexyna AI</small>
+</footer>
+</body>
+</html>
