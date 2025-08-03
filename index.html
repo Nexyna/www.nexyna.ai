@@ -99,39 +99,66 @@
     }
   ]
 }
-</script>
-
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Nexyna AI",
-  "url": "https://nexyna.ai/",
-  "logo": "https://nexyna.ai/logo.png",
-  "description": "Création d'agents IA et automatisation des processus pour le support client et les opérations."
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://nexyna.ai/#org",
+      "name": "Nexyna AI",
+      "url": "https://nexyna.ai/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://nexyna.ai/og-image.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "image": "https://nexyna.ai/og-image.jpg",
+      "description": "Nexyna AI conçoit des agents IA sur mesure pour automatiser le support client et optimiser les processus métier. Basés à Lyon, nous accompagnons PME et ETI en France et à l’international.",
+      "email": "contact@nexyna.ai",
+      "telephone": "+33 7 64 21 22 27",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lyon",
+        "addressCountry": "FR"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/nexyna"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nexyna.ai/#website",
+      "url": "https://nexyna.ai/",
+      "name": "Nexyna AI",
+      "inLanguage": "fr-FR",
+      "publisher": { "@id": "https://nexyna.ai/#org" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://nexyna.ai/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://nexyna.ai/#webpage",
+      "url": "https://nexyna.ai/",
+      "name": "Agents IA & Automatisation — Nexyna AI",
+      "description": "Création d’agents IA pour support client, automatisation de processus et intégrations sur-mesure.",
+      "inLanguage": "fr-FR",
+      "isPartOf": { "@id": "https://nexyna.ai/#website" },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://nexyna.ai/og-image.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
 }
 </script>
 
-
-  <!-- Données structurées (Schema.org) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Nexyna AI",
-    "url": "https://nexyna.ai/",
-    "logo": "https://nexyna.ai/logo.png",
-    "email": "mailto:amine@nexyna.ai",
-    "description": "Agence d’intelligence artificielle et d’automatisation basée à Lyon. Création d’agents IA pour support client, optimisation et intégration IA.",
-    "sameAs": [
-      "https://www.linkedin.com/company/nexyna-ai"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Lyon",
-      "addressCountry": "FR"
-    }
-  }
-  </script>
 
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 
