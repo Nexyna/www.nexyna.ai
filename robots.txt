@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
+# Empêche l'accès aux fichiers sensibles
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /junk/
+
+# Indique l'emplacement du sitemap
 Sitemap: https://nexyna.ai/sitemap.xml
