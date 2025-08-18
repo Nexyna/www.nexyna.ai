@@ -3,206 +3,102 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nexyna • Blog</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/blog.css">
-  <meta name="description" content="Articles Nexyna : IA, automatisation et productivité pour PME et transport.">
+  <title>Blog – Nexyna AI</title>
+  <meta name="description" content="Articles et conseils concrets sur les agents IA, l’automatisation et les intégrations par Nexyna AI." />
+  <link rel="canonical" href="https://www.nexyna.ai/blog.html" />
+  <style>
+    :root{
+      --bg:#0b0f17; --card:#111827; --text:#e6f0ff; --muted:#9fb1c9;
+      --accent:#19f0ff; --accent2:#7c4dff; --border:rgba(255,255,255,.08)
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:20px}
+    header{padding:28px 0;border-bottom:1px solid var(--border)}
+    .brand{font-weight:700;color:var(--accent)}
+    nav ul{display:flex;gap:18px;list-style:none;padding:0;margin:12px 0 0}
+    nav a{padding:6px 10px;border-radius:8px;border:1px solid transparent}
+    nav a:hover{border-color:var(--border)}
+    .hero{padding:28px 0}
+    .h1{
+      font-size:2rem;margin:0 0 6px;
+      text-shadow:0 0 12px rgba(25,240,255,.55),0 0 30px rgba(124,77,255,.25)
+    }
+    .lead{color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:18px}
+    @media(min-width:880px){ .grid{grid-template-columns:repeat(3,1fr)} }
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));
+      border:1px solid var(--border); border-radius:14px; padding:16px;
+      box-shadow:0 10px 28px rgba(0,0,0,.35)
+    }
+    .card h3{margin:.2em 0 .3em;font-size:1.05rem}
+    .meta{color:var(--muted);font-size:.9rem;margin:.2em 0 .6em}
+    .btn{display:inline-block;padding:8px 12px;border-radius:10px;border:1px solid var(--border)}
+    footer{margin-top:28px;border-top:1px solid var(--border);padding:16px 0;color:var(--muted)}
+    /* liste auto n8n */
+    #posts{display:grid;grid-template-columns:1fr;gap:12px;padding:0;list-style:none}
+    #posts li a{display:block;padding:12px;border-radius:12px;border:1px solid var(--border);background:var(--card)}
+    @media(min-width:820px){ #posts{grid-template-columns:repeat(2,1fr)} }
+  </style>
 </head>
 <body>
-  <!-- Header / Nav -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">Nexyna<span>.ai</span></a>
-      <nav class="nav">
-        <a href="index.html">Accueil</a>
-        <a href="services.html">Services</a>
-        <a href="projects.html">Projets</a>
-        <a class="active" href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
+  <div class="wrap">
+    <header>
+      <div class="brand">Nexyna<span style="color:#7c4dff"> AI</span></div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projets</a></li>
+          <li><a href="blog.html" aria-current="page">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
-    </div>
-  </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <h1>Le Blog Nexyna</h1>
-      <p>Conseils concrets pour intégrer l’IA et l’automatisation dans votre entreprise.</p>
-    </div>
-  </section>
+      <section class="hero">
+        <h1 class="h1">Blog – Agents IA & Automatisation</h1>
+        <p class="lead">Conseils concrets, guides et actus pour PME (WhatsApp, n8n/Make, intégrations API, IA pratique).</p>
+      </section>
+    </header>
 
-  <!-- Posts grid -->
-  <main class="container">
-    <section id="posts" class="grid">
-      <!-- Article 1 -->
-      <article class="card">
-        <a href="#ia-pme-2025" class="card-cover" aria-label="Lire l’article"></a>
-        <div class="card-body">
-          <h3>Pourquoi l’IA devient incontournable pour les PME en 2025</h3>
-          <p class="meta">Publié le 3 août 2025 · Lecture 6 min</p>
-          <p>Entre productivité, meilleure expérience client et réduction des tâches répétitives, l’IA passe d’un “nice to have” à un véritable levier business.</p>
-          <a class="btn" href="#ia-pme-2025">Lire l’article</a>
-        </div>
-      </article>
+    <main>
+      <!-- Liste auto gérée par n8n : le workflow remplacera le contenu entre START et END -->
+      <!-- LISTE_BLOG_AUTO_START -->
+      <ul id="posts">
+        <!-- n8n injectera ici des <li><a href="/blog/yyy-mm-dd-slug.html">Titre</a></li> -->
+      </ul>
+      <!-- LISTE_BLOG_AUTO_END -->
 
-      <!-- Article 2 -->
-      <article class="card">
-        <a href="#ia-7-taches" class="card-cover" aria-label="Lire l’article"></a>
-        <div class="card-body">
-          <h3>Automatisation intelligente : 7 tâches à déléguer à l’IA</h3>
-          <p class="meta">Publié le 3 août 2025 · Lecture 5 min</p>
-          <p>Du support client à la facturation, voici 7 cas d’usage concrets qui libèrent des heures chaque semaine.</p>
-          <a class="btn" href="#ia-7-taches">Lire l’article</a>
-        </div>
-      </article>
+      <!-- Articles épinglés (exemples statiques, tu peux en garder 1–3) -->
+      <section class="grid">
+        <article class="card">
+          <h3>🚀 Bienvenue sur le blog Nexyna AI</h3>
+          <p class="meta">Mise à jour : août 2025 · Lecture 2 min</p>
+          <p>On partage ici nos méthodes pour déployer rapidement des agents IA utiles (support client, RDV, suivi, notifications) et des automatisations qui font gagner du temps.</p>
+          <a class="btn" href="contact.html">Nous écrire</a>
+        </article>
+        <article class="card">
+          <h3>3 automatisations IA simples pour PME</h3>
+          <p class="meta">Lecture 4 min</p>
+          <p>Réponses WhatsApp fréquentes, qualification automatique et synchronisation CRM. Simple, mesurable, sans jargon.</p>
+          <a class="btn" href="services.html">Voir nos services</a>
+        </article>
+        <article class="card">
+          <h3>Comment on travaille</h3>
+          <p class="meta">Lecture 3 min</p>
+          <p>Audit éclair → prototype → déploiement → mesure. Transparence sur les coûts et la maintenance.</p>
+          <a class="btn" href="projects.html">Projets</a>
+        </article>
+      </section>
+    </main>
 
-      <!-- Article 3 -->
-      <article class="card">
-        <a href="#ia-transport" class="card-cover" aria-label="Lire l’article"></a>
-        <div class="card-body">
-          <h3>IA & Transport : réduire les coûts et optimiser la logistique</h3>
-          <p class="meta">Publié le 3 août 2025 · Lecture 5 min</p>
-          <p>Planification, suivi colis, SAV, facturation : les gains sont immédiats quand les flux sont bien automatisés.</p>
-          <a class="btn" href="#ia-transport">Lire l’article</a>
-        </div>
-      </article>
-
-      <!-- Article 4 -->
-      <article class="card">
-        <a href="#chatbots-b2b" class="card-cover" aria-label="Lire l’article"></a>
-        <div class="card-body">
-          <h3>Chatbots B2B : 5 erreurs qui font fuir vos clients</h3>
-          <p class="meta">Publié le 2 août 2025 · Lecture 4 min</p>
-          <p>Pas de contexte, pas d’escalade humaine, prompts faibles… Voici comment éviter les pièges classiques.</p>
-          <a class="btn" href="#chatbots-b2b">Lire l’article</a>
-        </div>
-      </article>
-
-      <!-- Article 5 -->
-      <article class="card">
-        <a href="#roadmap-ia" class="card-cover" aria-label="Lire l’article"></a>
-        <div class="card-body">
-          <h3>Roadmap IA en 30 jours pour PME</h3>
-          <p class="meta">Publié le 1 août 2025 · Lecture 7 min</p>
-          <p>Un plan simple : audit, quick wins, automatisations prioritaires et KPI pour mesurer l’impact.</p>
-          <a class="btn" href="#roadmap-ia">Lire l’article</a>
-        </div>
-      </article>
-    </section>
-
-    <!-- Zone articles complets (ancres) -->
-    <section class="articles">
-  <article id="ia-pme-2025">
-    <h2>Pourquoi l’IA devient incontournable pour les PME en 2025</h2>
-    <p>L’IA n’est plus un gadget : elle automatise les tâches répétitives, améliore l’expérience client et réduit les coûts opérationnels.</p>
-    <h3>3 gains immédiats</h3>
-    <ul>
-      <li><strong>Productivité :</strong> génération de documents, réponses clients, préparation de devis.</li>
-      <li><strong>Qualité :</strong> réponses cohérentes, moins d’erreurs humaines.</li>
-      <li><strong>Pilotage :</strong> tableaux de bord et alertes automatiques.</li>
-    </ul>
-    <h3>Par où commencer ?</h3>
-    <ol>
-      <li>Cartographier 5 tâches répétitives.</li>
-      <li>Lancer 1 automatisation rapide (&lt; 1 semaine).</li>
-      <li>Mesurer le temps gagné et réinvestir.</li>
-    </ol>
-    <p>Besoin d’un audit express ? <a href="contact.html">Contactez-nous</a>.</p>
-  </article>
-
-  <article id="ia-7-taches">
-    <h2>Automatisation intelligente : 7 tâches à déléguer à l’IA</h2>
-    <ol>
-      <li>Réponses clients FAQ (site / WhatsApp / email).</li>
-      <li>Qualification des leads (extraction infos + scoring).</li>
-      <li>Préparation de devis/contrats à partir de modèles.</li>
-      <li>Relances factures / impayés avec ton ton de marque.</li>
-      <li>Comptes-rendus d’appels / réunions (résumés + actions).</li>
-      <li>Veille sectorielle automatique (résumé hebdo).</li>
-      <li>Routing des tickets vers la bonne équipe.</li>
-    </ol>
-    <p>Chaque cas s’implémente avec des outils no-code (Make, n8n) + API IA. Durée typique : 2–5 jours.</p>
-  </article>
-
-  <article id="ia-transport">
-    <h2>IA & Transport : réduire les coûts et optimiser la logistique</h2>
-    <p>Du planning à la facturation, les gains sont rapides si les flux sont unifiés.</p>
-    <h3>Cas concrets</h3>
-    <ul>
-      <li><strong>Planification :</strong> propositions de tournées + alertes retards.</li>
-      <li><strong>SAV :</strong> assistant suivi colis par numéro.</li>
-      <li><strong>Ops :</strong> rapports journaliers automatiques.</li>
-      <li><strong>Admin :</strong> pré-facturation et contrôles.</li>
-    </ul>
-    <p>On peut démarrer par un POC de 10 jours avec KPI clairs.</p>
-  </article>
-
-  <article id="chatbots-b2b">
-    <h2>Chatbots B2B : 5 erreurs qui font fuir vos clients</h2>
-    <p>Un bon assistant conversationnel doit répondre vite, juste, et savoir passer la main à un humain. Voici les pièges à éviter.</p>
-    <h3>Les 5 erreurs courantes</h3>
-    <ol>
-      <li><strong>Pas de contexte client :</strong> pas d’historique CRM/tickets, donc répétitions et mauvaise personnalisation.</li>
-      <li><strong>Pas d’escalade humaine :</strong> pas de bouton “Parler à un agent”, ni création automatique de ticket.</li>
-      <li><strong>Prompts faibles :</strong> le bot ne connaît pas la marque, le ton, les limites.</li>
-      <li><strong>Pas de garde-fous :</strong> pas de règles (sources autorisées, données interdites, longueur des réponses).</li>
-      <li><strong>Pas de mesure :</strong> pas de KPI (résolution, CSAT, temps gagné).</li>
-    </ol>
-    <h3>Checklist d’un bot pro</h3>
-    <ul>
-      <li>Connexion au <strong>CRM</strong> et aux <strong>FAQ</strong> validées.</li>
-      <li>Workflow d’<strong>escalade</strong> (transfert live + ticket).</li>
-      <li><strong>Prompts structurés</strong> : rôle, ton, limites, format.</li>
-      <li><strong>Journalisation</strong> : logs, tags d’intention, retours clients.</li>
-      <li>KPI : résolution, CSAT, temps moyen, coût par ticket.</li>
-    </ul>
-    <p>Besoin d’un audit ? <a href="contact.html">Contactez Nexyna</a> pour une revue en 48h.</p>
-  </article>
-
-  <article id="roadmap-ia">
-    <h2>Roadmap IA en 30 jours pour PME</h2>
-    <p>Un plan simple pour passer de l’idée aux résultats mesurables, sans perturber l’activité.</p>
-    <h3>Phase 1 — Diagnostic (J1–J5)</h3>
-    <ul>
-      <li>Identifier 5 tâches répétitives fortes.</li>
-      <li>Lister les outils existants (CRM, ERP, mails, Drive) et leurs API.</li>
-      <li>Définir 3 KPI : heures gagnées, délais, satisfaction client.</li>
-    </ul>
-    <h3>Phase 2 — POC rapide (J6–J15)</h3>
-    <ul>
-      <li>Choisir 1 cas rapide : FAQ client, qualification de leads, ou génération de docs.</li>
-      <li>Implémenter avec Make/n8n + API IA. Documentation + vidéo Loom.</li>
-      <li>Mesurer l’impact sur un échantillon réel.</li>
-    </ul>
-    <h3>Phase 3 — Industrialisation (J16–J25)</h3>
-    <ul>
-      <li>Sécuriser : rôles, journaux, limites d’usage, sauvegardes.</li>
-      <li>Brancher au CRM/ERP, créer les tableaux de bord.</li>
-      <li>Former 2 référents internes.</li>
-    </ul>
-    <h3>Phase 4 — Extension & KPI (J26–J30)</h3>
-    <ul>
-      <li>Étendre à 2 nouveaux cas (relances, rapports, routage tickets).</li>
-      <li>Revue KPI mensuelle + amélioration continue.</li>
-    </ul>
-    <p>Demandez un plan personnalisé 30 jours : <a href="mailto:contact@nexyna.ai">contact@nexyna.ai</a>.</p>
-  </article>
-</section>
-
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="y"></span> Nexyna.ai — IA & Automatisation</p>
-      <a href="contact.html" class="footer-cta">Parler à un expert</a>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+    <footer>
+      <p>© <span id="y"></span> Nexyna AI — <a href="privacy-policy.html">Politique de confidentialité</a></p>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
