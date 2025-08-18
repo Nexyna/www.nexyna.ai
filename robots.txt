@@ -1,10 +1,6 @@
+# Autoriser tous les robots à explorer le site
 User-agent: *
 Allow: /
 
-# Empêche l'accès aux fichiers sensibles
-Disallow: /cgi-bin/
-Disallow: /tmp/
-Disallow: /junk/
-
-# Indique l'emplacement du sitemap
-Sitemap: https://nexyna.ai/sitemap.xml
+# Indiquer le sitemap à Google et aux autres moteurs
+Sitemap: https://www.nexyna.ai/sitemap.xml
