@@ -1,305 +1,73 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- ====== SEO de base ====== -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Nexyna AI – Création d’agents IA & automatisation pour le support client</title>
-<link rel="canonical" href="https://nexyna.ai/">
-
-<meta name="description" content="Nexyna AI conçoit des agents IA sur mesure pour automatiser le support client, optimiser les opérations et améliorer l’expérience utilisateur. Audit, conception, déploiement et optimisation continue.">
-<meta name="keywords" content="agents IA, support client, chatbot, automatisation, IA entreprise, service client, optimisation, Nexyna AI">
-<meta name="robots" content="index, follow">
-<meta name="author" content="Nexyna AI">
-<meta name="theme-color" content="#0eeaff">
-
-<!-- Langue -->
-<link rel="alternate" href="https://nexyna.ai/" hreflang="fr-FR">
-<meta http-equiv="Content-Language" content="fr">
-
-<!-- ====== Open Graph (Facebook/LinkedIn) ====== -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Nexyna AI">
-<meta property="og:url" content="https://nexyna.ai/">
-<meta property="og:title" content="Nexyna AI – Agents IA & Automatisation">
-<meta property="og:description" content="Automatisez votre support client avec des agents IA sur mesure. Déploiement rapide, résultats concrets.">
-<meta property="og:image" content="https://nexyna.ai/og-image.jpg">
-<meta property="og:image:secure_url" content="https://nexyna.ai/og-image.jpg">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-
-
-<!-- ====== Twitter Card ====== -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Nexyna AI – Agents IA & Automatisation">
-<meta name="twitter:description" content="Agents IA pour support client, intégrations WhatsApp/Web, analytics et optimisation continue.">
-<meta name="twitter:image" content="https://nexyna.ai/og-image.jpg">
-
-<!-- Favicon / icône -->
-<link rel="icon" type="image/png" href="/logo.png">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://nexyna.ai/#org",
-      "name": "Nexyna AI",
-      "url": "https://nexyna.ai/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://nexyna.ai/og-image.jpg",
-        "width": 1200,
-        "height": 630
-      },
-      "image": "https://nexyna.ai/og-image.jpg",
-      "description": "Nexyna AI conçoit des agents IA sur mesure pour automatiser le support client et optimiser les processus métier. Basés à Lyon, nous accompagnons PME et ETI en France et à l’international.",
-      "email": "contact@nexyna.ai",
-      "telephone": "+33 7 64 21 22 27",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Lyon",
-        "addressCountry": "FR"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/company/nexyna"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://nexyna.ai/#website",
-      "url": "https://nexyna.ai/",
-      "name": "Nexyna AI",
-      "inLanguage": "fr-FR",
-      "publisher": { "@id": "https://nexyna.ai/#org" },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://nexyna.ai/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://nexyna.ai/#webpage",
-      "url": "https://nexyna.ai/",
-      "name": "Agents IA & Automatisation — Nexyna AI",
-      "description": "Création d’agents IA pour support client, automatisation de processus et intégrations sur-mesure.",
-      "inLanguage": "fr-FR",
-      "isPartOf": { "@id": "https://nexyna.ai/#website" },
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "url": "https://nexyna.ai/og-image.jpg",
-        "width": 1200,
-        "height": 630
-      }
-    }
-  ]
-}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://nexyna.ai/#org",
-      "name": "Nexyna AI",
-      "url": "https://nexyna.ai/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://nexyna.ai/og-image.jpg",
-        "width": 1200,
-        "height": 630
-      },
-      "image": "https://nexyna.ai/og-image.jpg",
-      "description": "Nexyna AI conçoit des agents IA sur mesure pour automatiser le support client et optimiser les processus métier. Basés à Lyon, nous accompagnons PME et ETI en France et à l’international.",
-      "email": "contact@nexyna.ai",
-      "telephone": "+33 7 64 21 22 27",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Lyon",
-        "addressCountry": "FR"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/company/nexyna"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://nexyna.ai/#website",
-      "url": "https://nexyna.ai/",
-      "name": "Nexyna AI",
-      "inLanguage": "fr-FR",
-      "publisher": { "@id": "https://nexyna.ai/#org" },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://nexyna.ai/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://nexyna.ai/#webpage",
-      "url": "https://nexyna.ai/",
-      "name": "Agents IA & Automatisation — Nexyna AI",
-      "description": "Création d’agents IA pour support client, automatisation de processus et intégrations sur-mesure.",
-      "inLanguage": "fr-FR",
-      "isPartOf": { "@id": "https://nexyna.ai/#website" },
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "url": "https://nexyna.ai/og-image.jpg",
-        "width": 1200,
-        "height": 630
-      }
-    }
-  ]
-}
-</script>
-
-
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Suppression des données – Application Nexyna AI</title>
+  <meta name="description" content="Procédure officielle de suppression des données pour les utilisateurs Facebook/Instagram utilisant l'application Nexyna AI." />
   <style>
-    :root {
-      --bg: #0d1117; --panel:#161b22; --line:#30363d; --text:#e6edf3;
-      --muted:#9aa4af; --neon:#00ffff; --accent:#7c3aed;
-    }
-    * {box-sizing:border-box}
-    html,body {margin:0; background:var(--bg); color:var(--text); font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif}
-    header {padding:72px 20px; text-align:center; background: radial-gradient(900px 400px at 50% -10%, #0b1a20 0%, var(--bg) 60%), radial-gradient(900px 400px at 10% -20%, #120a1f 0%, transparent 60%)}
-    h1 {font-family:'Orbitron', monospace; font-size: clamp(28px, 5vw, 48px); margin:0 0 12px; color:var(--neon); text-shadow:0 0 10px #00ffff80, 0 0 20px #00ffff40}
-    .lead {max-width:900px; margin:0 auto; color:var(--muted); font-size:clamp(14px,2.2vw,18px)}
-    nav {position:sticky; top:0; background:rgba(22,27,34,.9); backdrop-filter: blur(8px); border-bottom:1px solid var(--line)}
-    .navwrap {max-width:1100px; margin:auto; display:flex; gap:16px; padding:10px 16px; align-items:center; justify-content:center; flex-wrap:wrap}
-    nav a {color:var(--neon); text-decoration:none; padding:8px 12px; border-radius:8px}
-    nav a:hover {box-shadow:0 0 10px #00ffff80}
-    section {max-width:1100px; margin:0 auto; padding:40px 16px}
-    h2 {font-family:'Orbitron', monospace; color:var(--neon); text-align:center; margin:0 0 28px; text-shadow:0 0 8px #00ffff40}
-    .grid {display:grid; gap:16px; grid-template-columns:repeat(auto-fit, minmax(260px,1fr))}
-    .card {background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:20px; box-shadow:0 0 12px #00ffff10}
-    .card h3 {margin:0 0 8px; color:var(--neon)}
-    .cta {display:flex; gap:12px; justify-content:center; margin-top:24px}
-    .btn {background:var(--neon); color:#001014; border:none; padding:12px 18px; border-radius:10px; font-weight:700; cursor:pointer; text-decoration:none}
-    .btn:hover {box-shadow:0 0 12px #00ffff, 0 0 24px #00ffff80}
-    .muted {color:var(--muted)}
-    footer {border-top:1px solid var(--line); text-align:center; padding:28px 16px; color:var(--muted)}
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; margin: 0; }
+    header { padding: 28px 20px; background: #0f172a; color: #fff; }
+    main { max-width: 860px; margin: 0 auto; padding: 28px 20px; }
+    h1 { margin: 0 0 12px; font-size: 1.8rem; }
+    .card { background: rgba(0,0,0,.03); border: 1px solid rgba(0,0,0,.08); border-radius: 14px; padding: 18px; }
+    ul { margin-top: 8px; }
+    code { background: rgba(0,0,0,.06); padding: 2px 6px; border-radius: 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    a { color: #2563eb; }
+    footer { max-width: 860px; margin: 0 auto; padding: 24px 20px 60px; font-size: .95rem; color: #475569; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Agents IA & Automatisation – Nexyna AI</h1>
-    <p class="lead">Création d’agents IA pour support client, automatisation de processus et intégrations sur-mesure. Basés à <strong>Lyon</strong>, nous accompagnons des entreprises en France et à l’international.</p>
-    <div class="cta">
-      <a class="btn" href="#contact">Parler de votre projet</a>
-      <a class="btn" href="#services" style="background:var(--accent); color:white">Voir nos services</a>
-    </div>
+    <h1>Suppression des données – Application Nexyna AI</h1>
+    <p>Procédure conforme (Facebook / Instagram)</p>
   </header>
+  <main>
+    <section class="card">
+      <h2>Comment demander la suppression de vos données&nbsp;?</h2>
+      <p>Si vous avez utilisé la connexion ou les fonctionnalités Facebook / Instagram avec notre application et souhaitez supprimer vos données, suivez ces étapes&nbsp;:</p>
+      <ol>
+        <li>
+          <strong>Retirer l’application depuis Facebook</strong><br />
+          Allez dans <em>Paramètres &gt; Applications et sites web &gt; Actifs</em>, sélectionnez «&nbsp;Nexyna AI&nbsp;», puis <em>Supprimer</em>.
+        </li>
+        <li>
+          <strong>Nous adresser une demande de suppression</strong><br />
+          Écrivez-nous à <a href="mailto:amine@nexyna.ai">amine@nexyna.ai</a> avec&nbsp;:
+          <ul>
+            <li>votre e‑mail (lié à votre compte),</li>
+            <li>toute information utile (ex.&nbsp;ID utilisateur Facebook s’il est disponible).</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Délai de traitement</strong><br />
+          Nous procédons à la suppression et/ou à l’anonymisation de l’ensemble de vos données dans un délai maximum de <strong>30 jours</strong>. Une confirmation vous sera envoyée par e‑mail.
+        </li>
+      </ol>
+    </section>
 
- <nav>
-  <ul class="menu">
-    <li><a href="./index.html">Accueil</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="projects.html">Projets</a></li>
-    <li><a href="blog.html">Blog</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+    <section class="card" style="margin-top:18px">
+      <h2>Portée de la suppression</h2>
+      <p>La suppression couvre les données que nous stockons spécifiquement pour fournir nos services (ex.&nbsp;jetons d’accès, identifiants techniques, journaux d’événements nécessaires au fonctionnement).</p>
+      <p>Les données conservées pour des raisons légales (ex.&nbsp;comptabilité) sont minimisées et séparées. Elles sont supprimées dès que la base légale cesse de s’appliquer.</p>
+    </section>
 
-<style>
-  nav {
-    margin-top: 20px;
-    text-align: center;
-  }
-  nav ul.menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  nav ul.menu li {
-    display: inline-block;
-  }
-  nav ul.menu li a {
-    display: inline-block;
-    padding: 8px 18px;
-    border-radius: 10px;
-    color: #19f0ff;
-    font-weight: 500;
-    background: rgba(25, 240, 255, 0.08);
-    border: 1px solid rgba(25,240,255,0.3);
-    transition: all 0.25s ease-in-out;
-    text-decoration: none;
-    text-shadow: 0 0 8px rgba(25,240,255,0.7);
-  }
-  nav ul.menu li a:hover {
-    background: #19f0ff;
-    color: #0b0f17;
-    box-shadow: 0 0 12px #19f0ff, 0 0 24px #19f0ff;
-  }
-</style>
- 
+    <section class="card" style="margin-top:18px">
+      <h2>Contact DPO / RGPD</h2>
+      <p>Pour toute question relative à la confidentialité ou à l’exercice de vos droits (accès, rectification, opposition, portabilité, limitation), contactez&nbsp;: <a href="mailto:amine@nexyna.ai">amine@nexyna.ai</a>.</p>
+    </section>
 
-  <section id="apropos">
-    <h2>À propos</h2>
-    <p class="muted" style="text-align:center; max-width:900px; margin:0 auto">
-      Nexyna AI est une <strong>agence d’intelligence artificielle</strong> spécialisée dans la <strong>création d’agents IA pour le support client</strong> et l’<strong>automatisation</strong> de processus métier. 
-      Nous concevons des solutions pragmatiques, mesurables et rapides à déployer.
-    </p>
-  </section>
-
-  <section id="services">
-    <h2>Nos services</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Agents IA conversationnels</h3>
-        <p class="muted">Chatbots web, WhatsApp et voix pour répondre 24/7, qualifier, router et suivre les demandes clients.</p>
-      </div>
-      <div class="card">
-        <h3>Automatisation de processus</h3>
-        <p class="muted">Workflows intelligents (Make, n8n, APIs) pour réduire les tâches répétitives et accélérer l’exécution.</p>
-      </div>
-      <div class="card">
-        <h3>IA pour le transport</h3>
-        <p class="muted">Optimisation de tournées, suivi prédictif, notifications proactives et intégrations TMS.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="projets">
-    <h2>Derniers projets</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Agent IA support client</h3>
-        <p class="muted">Mise en place d’un agent multilingue pour une PME logistique : réponses instantanées, réduction des tickets de 40%.</p>
-      </div>
-      <div class="card">
-        <h3>Automatisation transport</h3>
-        <p class="muted">Suivi automatisé des livraisons et alertes : -30% de délais de traitement, +25% de satisfaction.</p>
-      </div>
-      <div class="card">
-        <h3>Intégrations IA</h3>
-        <p class="muted">Connecteurs sur-mesure (CRM, ERP, TMS) pour unifier données et décisions.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p class="muted" style="text-align:center">Expliquez-nous votre besoin : nous revenons vers vous sous 24h.</p>
-    <div class="cta">
-      <a class="btn" href="mailto:amine@nexyna.ai">amine@nexyna.ai</a>
-    </div>
-  </section>
-
+    <section class="card" style="margin-top:18px">
+      <h2>Informations supplémentaires</h2>
+      <ul>
+        <li>Vous pouvez également retirer votre consentement à tout moment en supprimant l’application depuis Facebook / Instagram.</li>
+        <li>Si votre demande concerne WhatsApp Cloud API, indiquez le <em>numéro de téléphone</em> et l’horodatage approximatif des messages.</li>
+      </ul>
+    </section>
+  </main>
   <footer>
-    &copy; 2025 Nexyna AI – Agence IA & Automatisation • Lyon, France
-  </footer><p>© 2025 Nexyna AI — <a href="privacy-policy.html">Politique de confidentialité</a></p>
-
+    <p>&copy; Nexyna AI – Politique de suppression des données. Dernière mise à jour&nbsp;: <time datetime="2025-08-28">28 août 2025</time>.</p>
+  </footer>
 </body>
 </html>
